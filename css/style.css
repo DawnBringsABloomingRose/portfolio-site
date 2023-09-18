@@ -47,3 +47,98 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
+
+/*actual css starts here*/
+
+/*page layout*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.container>* {
+    border: 1px solid black;
+    min-height: 100vh;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 10fr 10fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    height: 60vh;
+    width: 80%;
+    margin:100px auto auto auto;
+}
+
+.projects>* {
+    margin: 10px 50px;   
+}
+
+.projects>div {
+    margin-top: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    gap: 50px;
+}
+
+.project {
+    border: 1px solid black;
+    height: 45vh;
+    width: 25%;
+}
+
+
+
+.screenshot {
+    background-color: blue;
+    height: 60%;
+}
+
+.desc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% auto;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.proj-name {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.proj-links {
+    grid-area: 1 / 2 / span 1 / span 1;
+
+}
+
+.proj-desc {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-me>* {
+    flex-grow: 1;
+}
+
+.contact {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 50px;
+}
