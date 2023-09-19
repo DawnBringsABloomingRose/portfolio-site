@@ -109,18 +109,20 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 70vh;
-    gap: 50px;
+    column-gap: 6%;
+    row-gap: 40px;
+    justify-content: space-between;
 }
 
 .project {
     border: 1px solid black;
-    height: 45vh;
+    height: 50vh;
     width: 25%;
 }
 
 .screenshot {
     background-color: blue;
-    height: 60%;
+    height: 55%;
 }
 
 .desc {
@@ -138,7 +140,8 @@ table {
 
 .proj-links {
     grid-area: 1 / 2 / span 1 / span 1;
-
+    display: flex;
+    justify-content: end;
 }
 
 .proj-desc {
@@ -178,7 +181,7 @@ table {
     margin: 20px;
 }
 
-.about headshot {
+.about .headshot {
     -webkit-box-shadow: 3px 1px 15px 4px rgba(0,0,0,0.25); 
     box-shadow: 3px 1px 15px 4px rgba(0,0,0,0.25);
     z-index: 10;
@@ -192,4 +195,25 @@ table {
 .about-links img {
     height: 65px;
     margin: 10px;
+}
+
+
+/*projects*/
+.proj-links img {
+    height: 30px;
+    margin: 5px;
+}
+
+.proj-name h4 {
+    margin: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.proj-desc p {
+    margin: 15px;
+}
+
+.projects>div>h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
