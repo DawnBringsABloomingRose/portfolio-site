@@ -259,3 +259,16 @@ html {
 
 
 /*responsive media queries*/
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 12px;
+    }
+    .about-container {
+        display:flex;
+        flex-direction: column;
+    }
+    .card {
+        display: none;
+    }
+}
