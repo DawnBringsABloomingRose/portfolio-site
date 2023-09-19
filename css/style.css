@@ -61,13 +61,12 @@ table {
 }
 
 .container>* {
-    border: 1px solid black;
     min-height: 100vh;
 }
 
 .about-container {
     display: grid;
-    grid-template-columns: 10fr 10fr 3fr;
+    grid-template-columns: 10fr 9fr 4fr;
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
     height: 60vh;
     width: 80%;
@@ -85,16 +84,16 @@ table {
 }
 
 .card {
-    border: 1px solid black;
     grid-area: 2 / 2 / span 3 / span 2;
 }
 
 .about-links {
     grid-area: 4 / 3 / span 1 / span 1;
+    display: flex;
 }
 
 .about-container p {
-    grid-area: 3 / 2 / span 1 / span 1;
+    grid-area: 3 / 2 / span 1 / span 2;
 }
 
 .projects>* {
@@ -162,4 +161,35 @@ table {
     flex-direction: column;
     align-items: end;
     margin-right: 50px;
+}
+
+
+
+/*styling*/
+
+/*about me*/
+
+.card {
+    -webkit-box-shadow: -2px 1px 15px 4px rgba(0,0,0,0.33); 
+    box-shadow: -2px 1px 15px 4px rgba(0,0,0,0.33);
+}
+.about h3 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.about headshot {
+    -webkit-box-shadow: 3px 1px 15px 4px rgba(0,0,0,0.25); 
+    box-shadow: 3px 1px 15px 4px rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.about p {
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.about-links img {
+    height: 65px;
+    margin: 10px;
 }
