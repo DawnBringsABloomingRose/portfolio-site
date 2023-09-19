@@ -66,7 +66,7 @@ table {
 
 .about-container {
     display: grid;
-    grid-template-columns: 10fr 9fr 4fr;
+    grid-template-columns: 40% 40% 1fr;
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
     height: 60vh;
     width: 80%;
@@ -76,7 +76,7 @@ table {
 .about-container img {
     grid-area: 1 / 1 / span 5/ span 1;
     height: 100%;
-    width: 100%;
+    justify-self: end;
 }
 
 .about-container h3 {
@@ -169,6 +169,11 @@ table {
 
 
 /*styling*/
+
+/*global*/
+img {
+    width: auto;
+}
 
 /*about me*/
 
