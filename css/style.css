@@ -217,3 +217,32 @@ table {
     font-size: 2rem;
     margin-bottom: 30px;
 }
+
+/*contact me*/
+.contact-me .headshot img {
+    height: 600px;
+}
+
+.links {
+    display: flex;
+}
+.links img {
+    height: 40px;
+}
+
+.contact p {
+    margin: 12px;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-me .headshot {
+    align-self:center;
+}
+
+.contact p img {
+    height: 22px;
+}
