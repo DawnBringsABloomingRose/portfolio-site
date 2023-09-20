@@ -281,4 +281,27 @@ html {
         display: grid;
         justify-content: center;
     }
+
+    .contact-me {
+        flex-direction: column;
+        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        align-items: center;
+        margin-right: 0px;
+    }
+    .contact>p {
+        text-align:center;
+    }
+
+    .contact>p img {
+        height:15px;
+    }
+
+    .contact-me .headshot img {
+        width:100vw;
+    }
 }
