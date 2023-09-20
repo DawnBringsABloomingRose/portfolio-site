@@ -74,9 +74,12 @@ table {
 }
 
 .about-container div.headshot {
-    grid-area: 1 / 1 / span 5/ span 1;
-    height: 100%;
-    justify-self: end;
+    grid-area: 1 / 1 / span 5 / span 1;
+}
+
+.about-container img.headshot {
+    width: 100%;
+    height: auto;
 }
 
 .about-container h3 {
